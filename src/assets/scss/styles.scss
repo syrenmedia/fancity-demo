@@ -1,0 +1,441 @@
+.off-canvas-wrapper,
+.off-canvas-wrapper-inner {
+	height: 100%;
+}
+
+body.landing-body {
+	background: url(../img/bg-landing.jpg);
+	background-size: cover;
+	background-position: -10px center;
+	.off-canvas-content{
+		background: none;
+	}
+}
+
+.form-with-infield-labels {
+	text-align: left;
+	margin-bottom: 20px;
+	.infield-input-group {
+		background: rgba(0,0,0,0.7);
+		border: 1px solid #000;
+		margin-top: -1px;
+		padding: 10px 10px 0;
+		color: #fff;
+		&.no-padding {
+			padding: 0;
+		}
+		label {
+			color: #888;
+			font-weight: bold;
+			margin: 0;
+			padding: 0;
+			line-height: 1;
+		}
+		.button {
+			margin-bottom: 0;
+		}
+		input[type=text],
+		input[type=tel],
+		input[type=number],
+		input[type=password],
+		select {
+			margin-bottom: 0;
+			background: 0;
+			border: none;
+			box-shadow: none;
+			padding: 0;
+			color: #fff;
+			font-size: 24px;
+			font-weight: 200;
+		}
+		.input-group {
+			margin-bottom: 0;
+			.input-group-label {
+				background: none;
+				border: none;
+				color: #fff;
+				font-size: 24px;
+				padding: 0;
+			}
+		}
+		.month,
+		.date {
+			position: relative;
+			&:after {
+				content: "/";
+				position: absolute;
+				top: -1px;
+				right: 10px;
+				font-size: 27px;
+			}
+		}
+	}
+}
+
+div.landing {
+	text-align: center;
+	.button.social {
+		padding: 10px 30px;
+		border-radius: 100px;
+		font-weight: bold;
+		vertical-align: middle;
+		line-height: 24px;
+		position: relative;
+		box-shadow: 0 0 30px 0 rgba(0,0,0,0.7);
+		&.facebook {
+			background-color: #3b5998;
+		}
+		&.twitter {
+			background-color: #00aced;
+		}
+		i {
+			margin-right: 10px;
+		}
+	}
+	img {
+		width: 70%;
+		text-align: center;
+		margin: 0 auto;
+		margin-top: 170px;
+	}
+	h1 {
+		color: #fff;
+		font-weight: bold;
+		text-transform: uppercase;
+		padding: 20px;
+		text-shadow: 0 0 10px rgba(0,0,0,1);
+		line-height: 1.3;
+		small {
+			text-transform: none;
+			line-height: 1.3;
+			font-size: 14px;
+			font-weight: normal;
+			color: #fff;
+			font-style: italic;
+		}
+	}
+	.button {
+		margin-right: 0;
+	}
+	div.social-buttons {
+		padding-top: 50px;
+		width: 80%;
+		margin: 0 auto;
+	}
+	.button.color {
+			/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#224d93+0,1da0d3+100 */
+			background: #224d93; /* Old browsers */
+			background: -moz-linear-gradient(45deg,  #224d93 0%, #1da0d3 100%); /* FF3.6-15 */
+			background: -webkit-linear-gradient(45deg,  #224d93 0%,#1da0d3 100%); /* Chrome10-25,Safari5.1-6 */
+			background: linear-gradient(45deg,  #224d93 0%,#1da0d3 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#224d93', endColorstr='#1da0d3',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+			text-transform: uppercase;
+			font-weight: 600;
+			border: 2px solid #fff;
+			text-shadow: 0 0 3px rgba(0,0,0,0.3);
+			box-shadow: 0 0 10px 0 rgba(0,0,0,0.7);
+		}
+	.sports {
+		text-align: left;
+		&.accordion {
+			background: rgba(0,0,0,0.6);
+			border: none;
+			border-top: 1px solid #fff;
+			border-bottom: 1px solid #fff;
+			.accordion-title {
+				color: #fff;
+				font-weight: bold;
+				font-size: 18px;
+				text-shadow: 0 0 10px rgba(0,0,0,1);
+				&:hover,
+				&:focus {
+					background: none;
+				}
+			}
+		}
+		.inline-list {
+			margin-left: 0;
+			li {
+				display: inline-block;
+			}
+		}
+		.button {
+			font-size: 12px;
+			font-weight: bold;
+			border-radius: 50px;
+			background: none;
+			border: 2px solid #fff;
+			padding: 5px 15px;
+			line-height: 1.3;
+			margin-right: 8px;
+			text-shadow: 0 0 10px rgba(0,0,0,1);
+			box-shadow: 0 0 10px rgba(0,0,0,0.5),
+					inset 0 0 10px rgba(0,0,0,0.5);
+			&.is-selected {
+				border-color: #299a0b;
+				color: #fff;
+				background: rgba(41, 154, 11, 0.3);
+			}
+
+		}
+	}
+}
+
+header.global {
+	.title-bar {
+		.title-bar-title {
+			cursor: pointer;
+		}
+	}	
+	#team-dropdown {
+		background: #000;
+		height: 0;
+		overflow: hidden;
+		transition: height 500ms;
+		&.is-open {
+			height: 149px;
+			transition: height 500ms;
+			&.has-2{
+				height: 96px;
+			}
+		}
+		ul {
+			margin: 0;
+		}
+		li {
+			&.packers { background: #314036;}
+			&.dodgers { background: #074983;}
+			&.lakers { background: #590C7C;}
+			&:first-child{
+				border-top: 1px solid #fff;
+			}
+		}
+		a {
+			color: #fff;
+			font-weight: bold;
+			display: block;
+			width: 100%;
+			padding: 10px 6px;
+			border-bottom: 1px solid #fff;
+			img {
+				display: inline-block;
+				margin-right: 4px;
+			}
+
+		}
+	}
+}
+
+#off-canvas-left {
+	background: #000;
+	height: 100vh;
+	a {
+		display: inline-block;
+		width: 100%;
+		border-bottom: 1px solid #4a4a4a;
+		font-weight: bold;
+		padding: 20px;
+		color: #fff;
+	}
+	div.profile {
+		color: #fff;
+		padding: 10px;
+		h5 {
+			font-weight: bold;
+			margin-bottom: 0;
+			margin-top: 5px;
+		}
+		i {
+			color: #4a4a4a;
+		}
+	}
+	div.name {
+		padding-left: 15px;
+	}
+}
+
+.top-slider {
+	overflow: hidden;
+	height: 210px;
+	div.slide{
+		position: relative;	
+		height: 210px;
+		img {
+			width: 100%;
+		}
+		.button {
+			margin: 0;
+			margin-top: 6px;
+			font-weight: bold;
+		}
+		div.text {
+			position: absolute;
+			bottom: 0;	
+			padding: 0;
+			width: 100%;
+			background: rgba(0,0,0,0.6);
+			padding-top: 10px;
+			padding-bottom: 10px;
+			h5 {
+				color: #f1f1f1;
+				font-size: 14px;
+				font-weight: 600;
+			}
+		}
+		h2,h3 {	
+			color: #fff;
+			font-weight: bold;
+			text-shadow: 0 0 10px rgba(0,0,0,1);
+			line-height: 1.2;
+			margin-bottom: 0;
+		}
+		h3 {
+			font-size: 16px;
+		}
+	}
+	.slick-dots {
+		top: -3px;
+		text-align: right;
+		right: 2px;
+		height: 30px;
+		li {
+			margin: 0;
+		}
+		li button:before {
+			color: #fff;
+			text-shadow: 0 0 10px rgba(0,0,0,1);
+		}
+		li.slick-active button:before{
+			color: #fff;
+			opacity: 1;
+
+		}
+	}
+}
+
+.team {
+	h1 {
+		font-weight: bold;
+		margin-bottom: 0;
+		line-height: 1;
+	}
+}
+
+.comment {
+	padding-bottom: 20px;
+	border-bottom: 1px solid #ddd;
+	margin-bottom: 20px;
+	.comment-text {
+		padding-left: 10px !important;
+		h6 {
+			font-weight: bold;
+			small {
+				font-weight: normal;
+			}
+		}
+		p {
+			font-size: 14px;
+			line-height: 1.3;
+		}
+	}
+}
+
+html, body, #map {
+	height: 100%;
+}
+
+#map {
+	height: 100%;
+	position: absolute;
+	top: 42px;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	.leaflet-popup-content-wrapper {
+		.leaflet-popup-content {
+			h2 {
+				font-size: 18px;
+				margin-bottom: 0;
+			}
+			h3 {
+				font-size: 14px;
+				color: $primary-color;
+			}
+			h4 {
+				font-size: 14px;
+				font-weight: normal;
+			}
+		}
+	}
+}
+
+.bottom-bar {
+	position: fixed; 
+	bottom: 0;
+	left: 0;
+	padding: 0;
+	.button,
+	.button-group {
+		margin-bottom: 0;
+	}
+	.button {
+		background: #4a4a4a;
+		i {
+			margin-right: 7px;
+		}
+	}
+}
+
+.team-content {
+	margin-top: 30px;
+	.tabs {
+		margin-bottom: 20px;
+		border-color: $primary-color;
+		border-width: 2px;
+		border-radius: 5px;
+		.tabs-title {
+			width: 50%;
+			text-align: center;
+			a {
+				padding: 10px;
+				font-weight: 600;
+			}
+			&.is-active {
+				a {
+					background: $primary-color;
+					color: #fff;
+				}
+			}
+		}
+	}
+	.tabs-panel {
+		padding: 0;
+		border: none;
+	}
+	.tabs-content {
+		border: none;
+	}
+}
+
+.article-card {
+	border: 1px solid #ddd;
+	margin-bottom: 20px;
+	div.image {
+		height: 150px;
+		background-size: cover;
+		background-position: center 25%;
+	}
+	h6 {
+		font-weight: 600;
+		margin-bottom: 0;
+		line-height: 1.2;
+		font-size: 14px;
+	}
+	.source {
+		color: #999;
+		font-size: 12px;
+	}
+	.text {
+		padding: 5px;
+	}
+}

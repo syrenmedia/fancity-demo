@@ -1,0 +1,23 @@
+<header class="global">
+	<div class="title-bar">
+		<div class="title-bar-left">
+		  <button class="menu-icon" type="button" data-open="off-canvas-left"></button>
+		  <span class="title-bar-title">#Packers <i class="fa fa-chevron-down"></i></span> 
+			<!-- <button><i class="fa fa-plus"></i></button> -->
+		</div>
+	</div>
+	<div id="team-dropdown" class="{{#ifpage 'packers' 'dodgers' 'lakers'}}has-2{{/ifpage}}">
+		<ul>
+			{{#unlesspage "packers"}}
+				<li class="packers"><a href="/packers.html"><img src="{{root}}assets/img/teams/green-bay-packers.png" alt="" width="30" /> #Packers</a></li>
+			{{/unlesspage}}
+			{{#unlesspage "dodgers"}}
+				<li class="dodgers"><a href="/dodgers.html"><img src="{{root}}assets/img/teams/los-angeles-dodgers.png" alt="" width="30" /> #Dodgers</a></li>
+			{{/unlesspage}}
+			{{#unlesspage "lakers"}}
+				<li class="lakers"><a href="/lakers.html"><img src="{{root}}assets/img/teams/los-angeles-lakers.png" alt="" width="30" /> #
+			Lakers</a></li>
+			{{/unlesspage}}
+		</ul>
+	</div>
+</header>
